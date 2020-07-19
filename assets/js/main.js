@@ -7,6 +7,12 @@ $.addEventListener("DOMContentLoaded", () => {
   const button = document.querySelector("button");
   const h2 = document.querySelector("h2");
   const h3 = document.querySelector("h3");
+  const img = document.querySelector("img");
+  const input1 = document.querySelector(".input1");
+  const input2 = document.querySelector(".input2");
+  const input3 = document.querySelector(".input3");
+  const input4 = document.querySelector(".input4");
+  const input5 = document.querySelector(".input5");
   contactForm.addEventListener("submit", async (event) => {
     event.preventDefault();
     button.setAttribute("disable", "disable");
@@ -31,7 +37,14 @@ $.addEventListener("DOMContentLoaded", () => {
       button.removeAttribute("disable");
       button.classList.remove("btn-disabled");
       h2.classList.remove("hidden");
+      img.classList.remove("hidden");
       contactForm.reset();
+      input1.classList.add("hidden");
+      input2.classList.add("hidden");
+      input3.classList.add("hidden");
+      input4.classList.add("hidden");
+      input5.classList.add("hidden");
+      button.classList.add("hidden");
     }
   });
 });

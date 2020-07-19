@@ -52,7 +52,9 @@ h2 {
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px var(--purple-hover);
 }
-
+.visible {
+  display: inherit;
+}
 .hidden {
   display: none;
 }
