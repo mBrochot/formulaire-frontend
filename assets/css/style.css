@@ -14,6 +14,9 @@ body {
   background-color: var(--purple);
   font-family: sans-serif;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -77,8 +80,8 @@ input {
   font-size: 16px;
 }
 textarea {
+  width: 80%;
   height: 118px;
-  width: 400px;
   background-color: var(--white);
   color: black;
   outline: none;
@@ -91,7 +94,7 @@ textarea {
   resize: none;
 }
 button {
-  width: 420px;
+  width: 85%;
   height: 50px;
   background-color: var(--purple);
   color: var(--white);
@@ -114,4 +117,14 @@ button:active {
 
 .btn-disabled {
   background-color: var(--purple-disable);
+}
+
+@media (max-width: 414px) {
+  .container {
+    height: 95vh;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
