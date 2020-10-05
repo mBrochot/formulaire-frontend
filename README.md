@@ -24,7 +24,7 @@ Clone this repository :
 ```
 git clone https://github.com/mBrochot/formulaire-frontend
 .git
-cd Netflix
+cd formulaire-frontend
 ```
 
 Install packages :
